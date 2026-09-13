@@ -27,6 +27,10 @@ test('All Locators', async({page})=>
     //getbylabel()
     //await page.getByLabel('Employee Full Name').fill('Alauddeen');
 
+    //getbytitle()
+    const title=await page.getByTitle('OrangeHRM');
+    await expect(title).toBeVisible();
+
     
 
 
